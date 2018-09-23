@@ -11,9 +11,13 @@ passport.use(
       callbackURL: "/auth/google/callback"
     },
     (accessToken, refreshToken, profile, done) => {
-      // console.log("type of profile id:", typeof profile.id);
-      user.create(["goggle_id"], [profile.id], result => {
-        console.log(result);
+      user.one(["google_id"], [profile.id], result => {
+        if (profile.id) {
+        } else {
+          user.create(["google_id"], [profile.id], result => {
+            console.log(result);
+          });
+        }
       });
     }
   )
