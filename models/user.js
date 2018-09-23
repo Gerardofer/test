@@ -1,9 +1,9 @@
 const Sequelize = require("sequelize");
-const sequelize = require("../config/connection_seq");
+const sequelize = require("../config/connection");
 
 const User = sequelize.define("user", {
-  google_id: Sequelize.STRING,
-  user_name: Sequelize.STRING
+  googleId: Sequelize.STRING,
+  userName: Sequelize.STRING
 });
 
 User.sync();
