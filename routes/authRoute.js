@@ -1,5 +1,4 @@
 const passport = require("passport");
-const user = require("../models/user_SQL");
 
 module.exports = app => {
   app.get(

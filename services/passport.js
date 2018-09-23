@@ -18,11 +18,12 @@ passport.use(
       }).then(existingUser => {
         if (existingUser) {
           console.log(`user wih id ${profile.id} is already in the DB`);
+          done(null, existingUser);
         } else {
           User.create({
             googleId: profile.id,
             userName: profile.displayName
-          });
+          }).then(user => done(null, user));
         }
       });
     }
