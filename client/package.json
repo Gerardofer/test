@@ -2,6 +2,11 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "proxy": {
+    "/auth/google": {
+      "target": "hppt://localhost:5000"
+    }
+  },
   "dependencies": {
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
