@@ -29,7 +29,7 @@ class Header extends Component {
               <a href="/api/logout">Log out</a>
             </li>
             <li>
-              <Link to="/profile">Profile</Link>
+              <Link to="/user_profile">Profile</Link>
             </li>
             <li>
               <Link to="/projects">Projects</Link>
