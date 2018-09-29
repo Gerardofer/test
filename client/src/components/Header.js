@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Sevafund from "../img/SevaFund_logo.png";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 import "./header.css";
 
 class Header extends Component {
@@ -28,9 +29,12 @@ class Header extends Component {
       <div>
         <nav>
           <div className="nav-wrapper">
-            <a href="/" className="brand-logo">
+            <Link
+              to={this.props.auth ? "/projects" : "/"}
+              className="brand-logo"
+            >
               <img src={Sevafund} alt="SevaFund" />
-            </a>
+            </Link>
             <ul id="nav-mobile" className="right hide-on-med-and-down">
               {this.renderContent()}
             </ul>

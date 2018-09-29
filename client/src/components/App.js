@@ -4,8 +4,8 @@ import Header from "./Header";
 import Login from "./Login";
 import { connect } from "react-redux";
 import * as actions from "../actions";
+import Landing from "./Landing";
 
-const Landing = () => <h2>Landing</h2>;
 const Projects = () => <h2>Projects</h2>;
 const ProjectsNew = () => <h2>New Project</h2>;
 const UserProfile = () => <h2>Profile</h2>;
