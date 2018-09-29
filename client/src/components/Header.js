@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import GoogleAuth from "../img/googleLogin.png";
 import Sevafund from "../img/SevaFund_logo.png";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
@@ -12,14 +13,28 @@ class Header extends Component {
       case false:
         return (
           <li>
-            <a href="/auth/google">Login with Google</a>
+            <a href="/auth/google">
+              <img
+                className="google-auth"
+                src={GoogleAuth}
+                alt="Google Login"
+              />
+            </a>
           </li>
         );
       default:
         return (
-          <li>
-            <a href="/api/logout">Log out</a>
-          </li>
+          <div>
+            <li>
+              <a href="/api/logout">Log out</a>
+            </li>
+            <li>
+              <Link to="/profile">Profile</Link>
+            </li>
+            <li>
+              <Link to="/projects">Projects</Link>
+            </li>
+          </div>
         );
     }
   }

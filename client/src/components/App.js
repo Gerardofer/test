@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Route, BrowserRouter } from "react-router-dom";
 import Header from "./Header";
-import Login from "./Login";
 import { connect } from "react-redux";
 import * as actions from "../actions";
 import Landing from "./Landing";
@@ -17,12 +16,12 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container">
+      //will think about creating a container for the <div>
+      <div className="">
         <BrowserRouter>
           <div>
             <Header />
             <Route exact path="/" component={Landing} />
-            <Route path="/login" component={Login} />
             <Route exact path="/projects" component={Projects} />
             <Route path="/projects/new" component={ProjectsNew} />
             <Route path="/user_profile" component={UserProfile} />
