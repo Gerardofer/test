@@ -1,15 +1,24 @@
 img {
+  margin-left: 20px;
   width: 225px;
   height: 60px;
 }
 
+nav ul a {
+  color: #334778;
+}
+
+nav ul {
+  margin-right: 20px;
+}
+
 .google-auth {
   margin-top: 6px;
-  width: 155px;
+  width: 195px;
   height: 50px;
 }
 
 div.nav-wrapper {
-  background-color: #ace295;
+  background-color: #ffffff;
   /* height: 75px; */
 }

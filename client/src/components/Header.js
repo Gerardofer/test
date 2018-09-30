@@ -25,15 +25,17 @@ class Header extends Component {
       default:
         return (
           <div>
-            <li>
-              <a href="/api/logout">Log out</a>
-            </li>
-            <li>
-              <Link to="/user_profile">Profile</Link>
-            </li>
-            <li>
-              <Link to="/projects">Projects</Link>
-            </li>
+            <ul>
+              <li>
+                <a href="/api/logout">Log out</a>
+              </li>
+              <li>
+                <Link to="/user_profile">Profile</Link>
+              </li>
+              <li>
+                <Link to="/projects">Projects</Link>
+              </li>
+            </ul>
           </div>
         );
     }
