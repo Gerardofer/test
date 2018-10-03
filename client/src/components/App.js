@@ -5,6 +5,7 @@ import { connect } from "react-redux";
 import * as actions from "../actions";
 import Landing from "./Landing";
 import Profile from "./Profile";
+import Type from "./Type";
 
 const Projects = () => <h2>Projects</h2>;
 const ProjectsNew = () => <h2>New Project</h2>;
@@ -23,6 +24,7 @@ class App extends Component {
             <Header />
             <Route exact path="/" component={Landing} />
             <Route exact path="/projects" component={Projects} />
+            <Route path="/type" component={Type} />
             <Route path="/projects/new" component={ProjectsNew} />
             <Route path="/user_profile" component={Profile} />
           </div>

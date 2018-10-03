@@ -1,0 +1,19 @@
+#donor {
+  background-image: url("../img/donor-pic.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+#org {
+  background-image: url("../img/org-pic.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#type {
+  margin-top: 6.5%;
+}
+
+.card-action {
+  font-size: 1.5rem;
+}
