@@ -1,10 +1,10 @@
-const epxress = require("express");
+const express = require("express");
 const keys = require("./config/keys");
 require("./services/passport");
 const cookieSession = require("cookie-session");
 const passport = require("passport");
 
-const app = epxress();
+const app = express();
 
 app.use(
   cookieSession({
@@ -20,7 +20,7 @@ require("./routes/authRoute")(app);
 require("./routes/apiRoutes")(app);
 
 if (process.env.NODE_ENV === "production") {
-  app.use(epxress.static("client/build"));
+  app.use(expresßs.static("client/build"));
 
   const path = require("path");
   app.get("*", (req, res) => {
