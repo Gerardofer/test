@@ -21,6 +21,7 @@
     "cookie-session": "^2.0.0-beta.3",
     "create-react-app": "^1.5.2",
     "express": "^4.16.3",
+    "materialize-css": "^1.0.0",
     "mysql": "^2.16.0",
     "mysql2": "^1.6.1",
     "nodemon": "^1.18.4",
