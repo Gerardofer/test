@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
+import "./Card.css";
 
 class Card extends Component {
 	render() {
 		return (
-			<div>
-				<div class="row">
-					<div class="col s3">
-						<div class="card">
-							<div class="card-image">
-								<img src="https://media.bizj.us/view/img/10305572/howtogivecharities*750xx3865-2178-0-397.jpg" />
-								{/* <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a> */}
+			<div className="container">
+				<div className="row">
+					<div className="col s3">
+						<div className="card">
+							<div className="card-image">
+								<img src="https://www.gannett-cdn.com/-mm-/959b8a0d077ef37a2f32651fca1907698404cf74/c=0-62-580-388/local/-/media/2018/07/02/USATODAY/usatsports/MotleyFool-TMOT-87cfe4f6-charity_large.jpg?width=3200&height=1680&fit=crop" alt="image"/>
+								{/* <a className="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a> */}
 							</div>
-							<span class="card-title">Card Title</span>
-							{/* <div class="card-content">
+							<div className="card-title">Card Title</div>
+							{/* <div className="card-content">
 								<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
 							</div> */}
 						</div>
