@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Card from './Card';
 
 class Project extends Component {
 	render() {
@@ -13,6 +14,7 @@ class Project extends Component {
 						- Active toggle for card to expand out, with the description/payment options/fund status appearing 
 							- Need to create a state for the card to keep it active 
 							- https://stackoverflow.com/questions/42630473/react-toggle-class-onclick */}
+				<Card />
 			</div>
 		);
 	}
