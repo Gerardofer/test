@@ -14,9 +14,12 @@ class Card extends Component {
 								<div className="card-title">
 									Card Title
 								</div>
-							</div>
-							<div className="card-content hidden">
+								<div className="card-content">
+								<p>Description</p>
 								<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+								<p> Target: x out of x dollars</p>
+								<span>Donate: <input type='text'></input></span>
+								</div>
 							</div>
 						</div>
 					</div>
