@@ -5,15 +5,26 @@
 }
 
 /* .hoverable .card-content, */
-.hoverable .card-image:active {
+/* .hoverable .card-image:active {
     height: 20%; 
     width: 40%;
     z-index: 2;
-    /* text-align: center; */
+    text-align: center;
     position: fixed;
     top: 20%;
     left:30%; 
     background-color: grey
+} */
+
+.hoverable .active {
+    height: 20%; 
+    width: 40%;
+    z-index: 2;
+    text-align: center;
+    position: fixed;
+    top: 20%;
+    left:30%; 
+    background-color: red
 }
 
 .hoverable .card:active {
