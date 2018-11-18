@@ -2,6 +2,18 @@ import React, { Component } from 'react';
 import Card from './Card';
 
 class Project extends Component {
+	state = {
+		active: false
+	}
+
+	setActive = () => {
+		let currentState = this.state.active;
+		currentState = !currentState;
+		this.setState(
+			{active:currentState}
+		)
+	}
+
 	render() {
 		return (
 			<div>
@@ -14,7 +26,7 @@ class Project extends Component {
 						- Active toggle for card to expand out, with the description/payment options/fund status appearing 
 							- Need to create a state for the card to keep it active 
 							- https://stackoverflow.com/questions/42630473/react-toggle-class-onclick */}
-				<Card />
+				<Card setActive={this.setActive} active={this.state.active}/>
 			</div>
 		);
 	}
