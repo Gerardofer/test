@@ -9,9 +9,10 @@ class Project extends Component {
 
 	handleClick = () => {
 		console.log('button clicked')
-		if(!this.state.active){
+		console.log(this.state.active)
+		if(this.state.active === true){
 			this.setState({
-				active: false,
+				active: false
 			})
 		}else {
 			this.setState({
