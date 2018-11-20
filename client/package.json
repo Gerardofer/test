@@ -2,16 +2,9 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "proxy": {
-    "/auth/google": {
-      "target": "http://localhost:5000"
-    },
-    "/api/*": {
-      "target": "http://localhost:5000"
-    }
-  },
   "dependencies": {
     "axios": "^0.18.0",
+    "http-proxy-middleware": "^0.19.0",
     "materialize-css": "^1.0.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
@@ -27,5 +20,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
