@@ -22,12 +22,9 @@ class Project extends Component {
 	}
 
 	
-
-
-
 	render() {
 		return (
-			<div>
+			<div className='container'>
 				{/* 1. Create layout for cards ~ 3-4 cards per row
 				2. Create Card.js using materialize css https://materializecss.com/cards.html
 					- Card.js will need charity name, description, image
@@ -41,8 +38,13 @@ class Project extends Component {
 						- A key will need to be assigned to each card so that when the state is changed, not every card is getting affected
 							- Only the card w/ its key should be changing in the state call		
 					*/}
-
-				<Card active={this.state.active} handleClick={this.handleClick}/>
+				<div className="row">
+					<Card active={this.state.active} handleClick={this.handleClick}/>
+					<Card active={this.state.active} handleClick={this.handleClick}/>
+					<Card active={this.state.active} handleClick={this.handleClick}/>
+					<Card active={this.state.active} handleClick={this.handleClick}/>
+					<Card active={this.state.active} handleClick={this.handleClick}/>
+				</div>
 			</div>
 		);
 	}
