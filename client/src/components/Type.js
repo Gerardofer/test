@@ -15,7 +15,7 @@ class Type extends Component {
             </div>
           </div>
           <div className="col s12 m6">
-            <div id="donor" className="card medium">
+            <div id="donorImg" className="card medium">
               <div className="card-action center">
                 <a href="/donor">Donor</a>
               </div>

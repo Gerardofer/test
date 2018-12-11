@@ -7,8 +7,8 @@ class Profile extends Component {
   render() {
     return (
       <div className="container">
+        <h3>{this.props.auth.userName}</h3>
         <div className="main-content">
-          <h3>{this.props.auth.userName}</h3>
           <PersonalInfo />
         </div>
       </div>

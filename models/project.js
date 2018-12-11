@@ -26,32 +26,31 @@ const Project = sequelize.define('project', {
 
 Project.sync();
 
-
 // For testing purposes only; delete these example project after.
 // const Project = require("../models/project");
-Project.create({
-  name: "test",
-  description: "test",
-  image: "Test",
-  link: "test",
-  target: 1000
-});
+// Project.create({
+// 	name: "test",
+// 	description: "test",
+// 	image: "Test",
+// 	link: "test",
+// 	target: 1000
+// });
 
-Project.create({
-	name: "test2",
-	description: "test",
-	image: "Test",
-	link: "test",
-	target: 1000
-});
+// Project.create({
+// 	name: "test2",
+// 	description: "test",
+// 	image: "Test",
+// 	link: "test",
+// 	target: 1000
+// });
 
-Project.create({
-	name: "test3",
-	description: "test",
-	image: "Test",
-	link: "test",
-	target: 1000
-});
+// Project.create({
+// 	name: "test3",
+// 	description: "test",
+// 	image: "Test",
+// 	link: "test",
+// 	target: 1000
+// });
 
 module.exports = Project;
 

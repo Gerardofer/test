@@ -7,6 +7,7 @@ import Landing from "./Landing";
 import Profile from "./Profile";
 import Type from "./Type";
 import Projects from "./Project";
+import Donor from "./Donor"
 
 class App extends Component {
   componentDidMount() {
@@ -23,6 +24,7 @@ class App extends Component {
             <Route exact path="/" component={Landing} />
             <Route exact path="/projects" component={Projects} />
             <Route path="/type" component={Type} />
+            <Route exact path="/donor" component={Donor} />
             {/* <Route path="/projects/new" component={ProjectsNew} /> */}
             <Route path="/user_profile" component={Profile} />
           </div>
